@@ -40,35 +40,35 @@
     
 3. How would we fix this code?
 
-  pub contract Stuff {
+    pub contract Stuff {
 
-      pub struct interface ITest {
-        pub var greeting: String
-        pub var favouriteFruit: String
+        pub struct interface ITest {
+          pub var greeting: String
+          pub var favouriteFruit: String
 
-        pub fun changeGreeting(newGreeting: String): String ////added
-      }
-
-
-      pub struct Test: ITest {
-        pub var favouriteFruit: String  /////added
-        pub var greeting: String
-
-
-        pub fun changeGreeting(newGreeting: String): String {
-          self.greeting = newGreeting
-          return self.greeting
+          pub fun changeGreeting(newGreeting: String): String ////added
         }
 
-        init() {
-          self.favouriteFruit="Orange" //// added
-          self.greeting = "Hello!"
-        }
-      }
 
-      pub fun fixThis() {
-        let test: Test{ITest} = Test()
-        let newGreeting = test.changeGreeting(newGreeting: "Bonjour!") 
-        log(newGreeting)
-      }
-  }
+        pub struct Test: ITest {
+          pub var favouriteFruit: String  /////added
+          pub var greeting: String
+
+
+          pub fun changeGreeting(newGreeting: String): String {
+            self.greeting = newGreeting
+            return self.greeting
+          }
+
+          init() {
+            self.favouriteFruit="Orange" //// added
+            self.greeting = "Hello!"
+          }
+        }
+
+        pub fun fixThis() {
+          let test: Test{ITest} = Test()
+          let newGreeting = test.changeGreeting(newGreeting: "Bonjour!") 
+          log(newGreeting)
+        }
+    }
