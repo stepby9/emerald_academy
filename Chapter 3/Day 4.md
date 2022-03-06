@@ -41,7 +41,6 @@
 3. How would we fix this code?
 
     pub contract Stuff {
-
         pub struct interface ITest {
           pub var greeting: String
           pub var favouriteFruit: String
