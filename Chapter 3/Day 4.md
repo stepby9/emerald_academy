@@ -40,7 +40,7 @@
     
 3. How would we fix this code?
 
-    pub contract Stuff {
+  pub contract Stuff {
 
       pub struct interface ITest {
         pub var greeting: String
@@ -71,4 +71,4 @@
         let newGreeting = test.changeGreeting(newGreeting: "Bonjour!") 
         log(newGreeting)
       }
-    }
+  }
