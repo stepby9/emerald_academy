@@ -31,7 +31,6 @@
               /*** AREA 1 ***/
               /**************/
               // a; b; c; d: all read/write
-
               // publicFunc(): can be called
               // contractFunc(): can be called
               // privateFunc(): can be called
